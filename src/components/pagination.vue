@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       numbers: [1, 2, 3, 4, 5],
-      currentPage: this.currentPage
+      currentPage: this.currentPage || 1
     }
   },
   methods: {
