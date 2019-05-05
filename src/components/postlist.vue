@@ -26,7 +26,7 @@
         </li>
       </ul>
     </div>
-    <pagination @pageNumber='pageRender' :currentPage='currentPage' />
+    <pagination @pageNumber='pageRender' ref="pagination" />
   </div>
 </template>
 <script>
@@ -66,6 +66,7 @@ export default {
       this.tab = tab
       this.currentPage = 1
       this.getData()
+      this.$refs.pagination.changePage(1)
     }
   },
   beforeMount() {

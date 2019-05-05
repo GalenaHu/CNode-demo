@@ -11,7 +11,6 @@
 <script>
 export default {
   name: 'Pagination',
-  props: ['currentPage'],
   data() {
     return {
       numbers: [1, 2, 3, 4, 5],
@@ -42,7 +41,7 @@ export default {
       this.currentPage += 1
       this.changePage(this.currentPage)
     }
-  }
+  },
 }
 
 </script>
