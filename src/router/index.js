@@ -8,7 +8,6 @@ import SlideBar from '../components/slidebar.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [{
       name: 'RootPage',
       path: '/',
